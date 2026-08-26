@@ -1,5 +1,5 @@
 ---
-title: Social Media
+title: SOCIAL MEDIA
 description: Place to gather all social media posts from the organization
 layout: web
 ---
