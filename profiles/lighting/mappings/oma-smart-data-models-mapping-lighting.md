@@ -45,26 +45,26 @@ layout: doc
 
 ## Mappable information
 
-| OMA                                                | FIWARE                   |
-| -------------------------------------------------- | ------------------------ |
-| Latitude (6/1) Longitude (6/2)                     | location                 |
-| Command in action (3416/2) Dimming level (3418/35) | powerState               |
-| Timestamp (3418/5518)                              | observationDateTime      |
-| Active power (3418/4)                              | powerConsumtpion         |
-| Cumulated active energy (3418/6)                   | lifetimePowerConsumption |
-| Power factor (3418/5)                              | powerFactor              |
-| Supply current (3418/2)                            | current                  |
-| Supply voltage (3418/1)                            | voltage                  |
-| Lamp ON timestamp                                  | dateLastSwitchingOn      |
-| Actual light color temperature (3416/40)           | *TODO*                   |
-| *TODO*                                             | dateLastSwitchingOff     |
-| *TODO*                                             | illuminanceLevel         |
+| OMA                                                | FIWARE                   | Comments                        |     
+| -------------------------------------------------- | ------------------------ |---------------------------------|
+| Latitude (6/1) Longitude (6/2)                     | location                 | could have different attributes |
+| Command in action (3416/2) Dimming level (3418/35) | powerState               |                                 |
+| Timestamp (3418/5518)                              | observationDateTime      |                                 |
+| Active power (3418/4)                              | powerConsumtpion         |                                 |
+| Cumulated active energy (3418/6)                   | lifetimePowerConsumption |                                 |
+| Power factor (3418/5)                              | powerFactor              |                                 |
+| Supply current (3418/2)                            | current                  |                                 |
+| Supply voltage (3418/1)                            | voltage                  |                                 |
+| Lamp ON timestamp                                  | dateLastSwitchingOn      |                                 |
+| Actual light color temperature (3416/40)           | *TODO*                   | Model needs extension           |
+| *TODO*                                             | dateLastSwitchingOff     |                                 |
+| *TODO*                                             | illuminanceLevel         |                                 |
 
-
+Another check is that the data type is fully compatible
 
 It seems there is no possibility of control over dimming, but that could be absolutely acceptable. This also explains why the vast majority of the resources are related to the Electrical Monitor (3418) and not to the Outdoor Lamp Controller (3416)
 The nominal lamp output in lumen at 100% dimming should be added to the OMA Data Model
-The color temperature is not currently present in the Smart Data Model
+The color temperature is not currently present in the Smart Data Model. It can be extended if there are examples 
 
 
 
